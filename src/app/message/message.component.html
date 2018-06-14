@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{message.dni}}: {{message.name | uppercase}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <p>{{message.message}}</p>
+    </div>
+    <div>
+      <p></p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button type="submit" (click)="delete()" color="primary">Delete</button>
+  </mat-card-actions>
+</mat-card>
