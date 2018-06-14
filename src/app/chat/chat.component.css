@@ -1,0 +1,18 @@
+.example-full-width{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.field{
+  flex-direction: column;
+}
+
+.good {
+  color: green;
+}
+
+.bad {
+  margin: 10;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}

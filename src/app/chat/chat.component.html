@@ -1,0 +1,18 @@
+<div *ngIf="user.name" class="good">
+  <a>
+    Current user it's {{user.name}}
+  </a>
+</div>
+<div *ngIf="!user.name" class="bad">
+  <a>
+    First login
+  </a>
+</div>
+<div *ngFor="let message of messages">
+  <app-message [message]="message"></app-message>
+</div>
+<div class="field">
+  <mat-form-field>
+    <input matInput placeholder="Message" (keyup.enter)="send($event)" id="newMessage" required>
+  </mat-form-field>
+</div>
